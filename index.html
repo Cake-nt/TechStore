@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Tienda de Tecnología Online</title>
+    <meta name="description" content="TechStore Online - Tu tienda de tecnología favorita. Encuentra laptops, smartphones, accesorios y más.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Tech<span>Store</span></span>
+                </a>
+            </div>
+
+            <form class="search-form" action="productos.html" method="get">
+                <input type="search" name="busqueda" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="submit" aria-label="Realizar búsqueda">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito <span class="cart-badge">0</span></a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- BANNER -->
+        <section class="banner" aria-labelledby="banner-title">
+            <figure>
+                <img src="img/banner-tech.jpg" alt="Oferta especial en productos tecnológicos - Descuentos hasta 50% en laptops y smartphones" loading="lazy">
+                <figcaption>Ofertas exclusivas de temporada</figcaption>
+            </figure>
+            <div class="banner-content">
+                <h1 id="banner-title">¡Gran Liquidación Tecnológica!</h1>
+                <p>Hasta <mark>50% OFF</mark> en productos seleccionados. Oferta válida por tiempo limitado.</p>
+                <a href="productos.html" class="btn-primary">
+                    <i class="fas fa-shopping-bag"></i> Comprar ahora
+                </a>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <section class="categorias" aria-labelledby="categorias-title">
+            <h2 id="categorias-title">Categorías</h2>
+            <div class="categorias-grid">
+                <article class="categoria-card">
+                    <a href="productos.html?categoria=laptops">
+                        <img src="img/categoria-laptops.jpg" alt="Categoría Laptops y computadoras portátiles" loading="lazy">
+                        <h3>Laptops</h3>
+                        <p>Desde <strong>$599</strong></p>
+                    </a>
+                </article>
+                <article class="categoria-card">
+                    <a href="productos.html?categoria=smartphones">
+                        <img src="img/categoria-smartphones.jpg" alt="Categoría Smartphones y teléfonos móviles" loading="lazy">
+                        <h3>Smartphones</h3>
+                        <p>Desde <strong>$299</strong></p>
+                    </a>
+                </article>
+                <article class="categoria-card">
+                    <a href="productos.html?categoria=accesorios">
+                        <img src="img/categoria-accesorios.jpg" alt="Categoría Accesorios tecnológicos" loading="lazy">
+                        <h3>Accesorios</h3>
+                        <p>Desde <strong>$19</strong></p>
+                    </a>
+                </article>
+                <article class="categoria-card">
+                    <a href="productos.html?categoria=gaming">
+                        <img src="img/categoria-gaming.jpg" alt="Categoría Gaming y periféricos para videojuegos" loading="lazy">
+                        <h3>Gaming</h3>
+                        <p>Desde <strong>$49</strong></p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="productos-destacados" aria-labelledby="destacados-title">
+            <h2 id="destacados-title">Productos Destacados</h2>
+            <div class="productos-grid">
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/laptop-gamer.jpg" alt="Laptop Gamer ASUS ROG Zephyrus G14 con pantalla 14 pulgadas" loading="lazy">
+                        <span class="etiqueta-oferta"><mark>20% OFF</mark></span>
+                    </header>
+                    <div class="producto-info">
+                        <h3>Laptop Gamer ASUS ROG</h3>
+                        <p>Intel Core i7, 16GB RAM, RTX 3060</p>
+                        <div class="producto-precio">
+                            <span class="precio-original">$1,299</span>
+                            <strong class="precio-oferta">$999</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="1" data-nombre="Laptop Gamer ASUS ROG" data-precio="999">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.8 (120 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/iphone-15.jpg" alt="iPhone 15 Pro Max en color titanio natural" loading="lazy">
+                        <span class="etiqueta-oferta"><mark>15% OFF</mark></span>
+                    </header>
+                    <div class="producto-info">
+                        <h3>iPhone 15 Pro Max</h3>
+                        <p>128GB, Cámara 48MP, Titanio</p>
+                        <div class="producto-precio">
+                            <span class="precio-original">$1,199</span>
+                            <strong class="precio-oferta">$1,019</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="2" data-nombre="iPhone 15 Pro Max" data-precio="1019">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.9 (85 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/audifonos-sony.jpg" alt="Audífonos inalámbricos Sony WH-1000XM5 con cancelación de ruido" loading="lazy">
+                        <span class="etiqueta-oferta"><mark>10% OFF</mark></span>
+                    </header>
+                    <div class="producto-info">
+                        <h3>Audífonos Sony WH-1000XM5</h3>
+                        <p>Cancelación de ruido, 30h batería</p>
+                        <div class="producto-precio">
+                            <span class="precio-original">$399</span>
+                            <strong class="precio-oferta">$359</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="3" data-nombre="Audífonos Sony WH-1000XM5" data-precio="359">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.7 (64 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/monitor-samsung.jpg" alt="Monitor Samsung Odyssey G9 curvo de 49 pulgadas" loading="lazy">
+                    </header>
+                    <div class="producto-info">
+                        <h3>Monitor Samsung Odyssey G9</h3>
+                        <p>49" 240Hz, Curvo, QLED</p>
+                        <div class="producto-precio">
+                            <strong>$1,499</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="4" data-nombre="Monitor Samsung Odyssey G9" data-precio="1499">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.6 (42 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/tablet-samsung.jpg" alt="Tablet Samsung Galaxy Tab S9 Ultra con S Pen" loading="lazy">
+                    </header>
+                    <div class="producto-info">
+                        <h3>Tablet Samsung Galaxy Tab S9</h3>
+                        <p>14.6", 256GB, S Pen incluido</p>
+                        <div class="producto-precio">
+                            <strong>$999</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="5" data-nombre="Tablet Samsung Galaxy Tab S9" data-precio="999">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.8 (53 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/teclado-mecanico.jpg" alt="Teclado mecánico gamer con RGB y switches Cherry MX" loading="lazy">
+                        <span class="etiqueta-oferta"><mark>25% OFF</mark></span>
+                    </header>
+                    <div class="producto-info">
+                        <h3>Teclado Mecánico Gamer</h3>
+                        <p>Cherry MX Red, RGB, 60%</p>
+                        <div class="producto-precio">
+                            <span class="precio-original">$120</span>
+                            <strong class="precio-oferta">$89</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="6" data-nombre="Teclado Mecánico Gamer" data-precio="89">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.5 (98 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/smartwatch-apple.jpg" alt="Apple Watch Series 9 con pantalla siempre activa" loading="lazy">
+                    </header>
+                    <div class="producto-info">
+                        <h3>Apple Watch Series 9</h3>
+                        <p>GPS, 45mm, Siempre activa</p>
+                        <div class="producto-precio">
+                            <strong>$429</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-check-circle"></i> Disponible
+                        </div>
+                        <button class="btn-add-cart" data-id="7" data-nombre="Apple Watch Series 9" data-precio="429">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.7 (71 reseñas)</small>
+                    </footer>
+                </article>
+
+                <article class="producto-card">
+                    <header>
+                        <img src="img/camara-sony.jpg" alt="Cámara Sony Alpha A7 IV sin espejo de 33MP" loading="lazy">
+                    </header>
+                    <div class="producto-info">
+                        <h3>Cámara Sony Alpha A7 IV</h3>
+                        <p>33MP, 4K 60fps, Sin espejo</p>
+                        <div class="producto-precio">
+                            <strong>$2,499</strong>
+                        </div>
+                        <div class="producto-disponibilidad">
+                            <i class="fas fa-exclamation-circle"></i> Agotado
+                        </div>
+                        <button class="btn-add-cart" data-id="8" data-nombre="Cámara Sony Alpha A7 IV" data-precio="2499" disabled>
+                            <i class="fas fa-times-circle"></i> No disponible
+                        </button>
+                    </div>
+                    <footer>
+                        <small><i class="fas fa-star"></i> 4.9 (36 reseñas)</small>
+                    </footer>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- LABORATORIO HTML5 -->
+        <section class="laboratorio-html5" aria-labelledby="laboratorio-title">
+            <h2 id="laboratorio-title">🧪 Laboratorio HTML5</h2>
+            <p>Demostración de etiquetas HTML5 menos comunes:</p>
+            
+            <div class="laboratorio-grid">
+                <div class="laboratorio-item">
+                    <h3>Ruby Annotation</h3>
+                    <ruby>
+                        Tech<rp>(</rp><rt>Technología</rt><rp>)</rp>
+                        Store<rp>(</rp><rt>Tienda</rt><rp>)</rp>
+                    </ruby>
+                </div>
+
+                <div class="laboratorio-item">
+                    <h3>BDI - Bidirectional Isolation</h3>
+                    <p>Usuario: <bdi>أحمد</bdi> compró un producto.</p>
+                </div>
+
+                <div class="laboratorio-item">
+                    <h3>BDO - Text Direction Override</h3>
+                    <p><bdo dir="rtl">TechStore - Texto invertido</bdo></p>
+                </div>
+
+                <div class="laboratorio-item">
+                    <h3>WBR - Word Break</h3>
+                    <p>URL larga: https://techstore.com/productos/laptops<wbr>/gaming<wbr>/asus-rog<wbr>/zephyrus-g14</p>
+                </div>
+
+                <div class="laboratorio-item">
+                    <h3>DATA - Valor Machine-readable</h3>
+                    <data value="SKU-LAP-001">Laptop Gamer ASUS ROG</data>
+                    <data value="SKU-PH-002">iPhone 15 Pro Max</data>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4><i class="fas fa-store"></i> TechStore</h4>
+                <p>Tu tienda de tecnología favorita. Encontramos los mejores productos para ti.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i> Av. Tecnológica 123<br>
+                    <i class="fas fa-phone"></i> <a href="tel:+18091234567">+1 (809) 123-4567</a><br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@techstore.com">info@techstore.com</a>
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p><i class="fas fa-clock"></i> Lun-Vie: 9am - 9pm</p>
+                <p><i class="fas fa-clock"></i> Sáb: 10am - 6pm</p>
+                <p><i class="fas fa-clock"></i> Dom: Cerrado</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                <i class="far fa-copyright"></i> 2026 <strong>TechStore</strong>. 
+                Todos los derechos reservados. 
+                <small>Desarrollado con <i class="fas fa-heart"></i> por el equipo TechStore</small>
+            </p>
+            <p>
+                <a href="#">Política de privacidad</a> | 
+                <a href="#">Términos y condiciones</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

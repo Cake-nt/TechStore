@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - TechStore Online</title>
+    <meta name="description" content="Revisa los productos en tu carrito de compras en TechStore. Actualiza cantidades y finaliza tu compra.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Tech<span>Store</span></span>
+                </a>
+            </div>
+            <form class="search-form" action="productos.html" method="get">
+                <input type="search" name="busqueda" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="submit" aria-label="Realizar búsqueda">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+                    <li><a href="carrito.html" class="active"><i class="fas fa-shopping-cart"></i> Carrito <span class="cart-badge">3</span></a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="carrito-seccion" aria-labelledby="carrito-titulo">
+            <h1 id="carrito-titulo"><i class="fas fa-shopping-cart"></i> Carrito de Compras</h1>
+
+            <div class="carrito-contenido">
+                <table class="tabla-carrito">
+                    <caption>Productos en tu carrito de compras</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio unitario</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="carrito-producto">
+                                <img src="img/laptop-gamer-pequeno.jpg" alt="Laptop Gamer ASUS ROG" loading="lazy">
+                                <div>
+                                    <h3>Laptop Gamer ASUS ROG</h3>
+                                    <small>ID: #ASUS-001</small>
+                                </div>
+                            </td>
+                            <td><strong>$999</strong></td>
+                            <td>
+                                <div class="carrito-cantidad">
+                                    <button class="btn-cantidad" aria-label="Disminuir cantidad">-</button>
+                                    <input type="number" value="1" min="1" max="12">
+                                    <button class="btn-cantidad" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </td>
+                            <td><strong>$999</strong></td>
+                            <td>
+                                <button class="btn-eliminar" aria-label="Eliminar producto del carrito">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="carrito-producto">
+                                <img src="img/iphone-15-pequeno.jpg" alt="iPhone 15 Pro Max" loading="lazy">
+                                <div>
+                                    <h3>iPhone 15 Pro Max</h3>
+                                    <small>ID: #APP-002</small>
+                                </div>
+                            </td>
+                            <td><strong>$1,019</strong></td>
+                            <td>
+                                <div class="carrito-cantidad">
+                                    <button class="btn-cantidad" aria-label="Disminuir cantidad">-</button>
+                                    <input type="number" value="2" min="1" max="10">
+                                    <button class="btn-cantidad" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </td>
+                            <td><strong>$2,038</strong></td>
+                            <td>
+                                <button class="btn-eliminar" aria-label="Eliminar producto del carrito">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="carrito-producto">
+                                <img src="img/audifonos-sony-pequeno.jpg" alt="Audífonos Sony WH-1000XM5" loading="lazy">
+                                <div>
+                                    <h3>Audífonos Sony WH-1000XM5</h3>
+                                    <small>ID: #SNY-003</small>
+                                </div>
+                            </td>
+                            <td><strong>$359</strong></td>
+                            <td>
+                                <div class="carrito-cantidad">
+                                    <button class="btn-cantidad" aria-label="Disminuir cantidad">-</button>
+                                    <input type="number" value="1" min="1" max="15">
+                                    <button class="btn-cantidad" aria-label="Aumentar cantidad">+</button>
+                                </div>
+                            </td>
+                            <td><strong>$359</strong></td>
+                            <td>
+                                <button class="btn-eliminar" aria-label="Eliminar producto del carrito">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="carrito-acciones">
+                                <button class="btn-vaciar"><i class="fas fa-trash-alt"></i> Vaciar carrito</button>
+                                <a href="productos.html" class="btn-seguir-comprando">
+                                    <i class="fas fa-arrow-left"></i> Seguir comprando
+                                </a>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <!-- RESUMEN -->
+                <aside class="carrito-resumen" aria-label="Resumen de la compra">
+                    <h2>Resumen de compra</h2>
+                    
+                    <div class="resumen-detalle">
+                        <p>
+                            <span>Subtotal</span>
+                            <span>$3,396</span>
+                        </p>
+                        <p>
+                            <span>Descuentos</span>
+                            <span class="descuento">-$150</span>
+                        </p>
+                        <p>
+                            <span>Envío</span>
+                            <span class="envio-gratis">Gratis <i class="fas fa-check-circle"></i></span>
+                        </p>
+                        <p>
+                            <span>Impuestos (18%)</span>
+                            <span>$584.28</span>
+                        </p>
+                        <hr>
+                        <p class="resumen-total">
+                            <strong>Total</strong>
+                            <strong class="total-precio">$3,830.28</strong>
+                        </p>
+                    </div>
+
+                    <div class="descuento-progreso">
+                        <label for="descuento-meter">Progreso de descuento:</label>
+                        <meter id="descuento-meter" value="75" min="0" max="100">
+                            75% de descuento aplicado
+                        </meter>
+                        <span>75%</span>
+                    </div>
+
+                    <div class="pedido-progreso">
+                        <label for="pedido-progress">Progreso del pedido:</label>
+                        <progress id="pedido-progress" value="3" max="10">
+                            3 de 10 pasos completados
+                        </progress>
+                        <span>Paso 3 de 10</span>
+                    </div>
+
+                    <button class="btn-finalizar-compra">
+                        <i class="fas fa-credit-card"></i> Finalizar compra
+                    </button>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4><i class="fas fa-store"></i> TechStore</h4>
+                <p>Tu tienda de tecnología favorita.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i> Av. Tecnológica 123<br>
+                    <i class="fas fa-phone"></i> <a href="tel:+18091234567">+1 (809) 123-4567</a><br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@techstore.com">info@techstore.com</a>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p><i class="fas fa-clock"></i> Lun-Vie: 9am - 9pm</p>
+                <p><i class="fas fa-clock"></i> Sáb: 10am - 6pm</p>
+                <p><i class="fas fa-clock"></i> Dom: Cerrado</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="far fa-copyright"></i> 2026 <strong>TechStore</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

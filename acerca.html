@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - TechStore Online</title>
+    <meta name="description" content="Conoce más sobre TechStore, nuestra misión, visión y el equipo detrás de la mejor tienda de tecnología.">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Tech<span>Store</span></span>
+                </a>
+            </div>
+            <form class="search-form" action="productos.html" method="get">
+                <input type="search" name="busqueda" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="submit" aria-label="Realizar búsqueda">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+                    <li><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito <span class="cart-badge">0</span></a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="acerca.html" class="active"><i class="fas fa-info-circle"></i> Acerca</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <article class="acerca-seccion" aria-labelledby="acerca-titulo">
+            <h1 id="acerca-titulo"><i class="fas fa-info-circle"></i> Acerca de TechStore</h1>
+
+            <!-- INTRODUCCIÓN -->
+            <section class="acerca-intro" aria-labelledby="intro-titulo">
+                <h2 id="intro-titulo">Nuestra historia</h2>
+                <p>
+                    <strong>TechStore</strong> nació en <time datetime="2024-01-15">enero de 2024</time> 
+                    con la misión de revolucionar la forma en que las personas compran tecnología. 
+                    Desde entonces, nos hemos convertido en la tienda de referencia para 
+                    <abbr title="Entusiastas de la tecnología">tech lovers</abbr> y profesionales.
+                </p>
+                <p>
+                    Con sede en <abbr title="República Dominicana">RD</abbr>, hemos logrado expandir 
+                    nuestro alcance a nivel internacional, ofreciendo productos de las mejores marcas 
+                    del mercado.
+                </p>
+            </section>
+
+            <!-- MISIÓN Y VISIÓN -->
+            <div class="acerca-grid">
+                <section class="acerca-mision" aria-labelledby="mision-titulo">
+                    <h2 id="mision-titulo"><i class="fas fa-bullseye"></i> Misión</h2>
+                    <p>
+                        Proporcionar a nuestros clientes acceso a la tecnología más avanzada 
+                        con un servicio excepcional y precios competitivos, mejorando su calidad 
+                        de vida y productividad.
+                    </p>
+                </section>
+
+                <section class="acerca-vision" aria-labelledby="vision-titulo">
+                    <h2 id="vision-titulo"><i class="fas fa-eye"></i> Visión</h2>
+                    <p>
+                        Ser la tienda de tecnología número 1 en <abbr title="América Latina">Latam</abbr>, 
+                        reconocida por nuestra innovación, confianza y compromiso con la excelencia.
+                    </p>
+                </section>
+            </div>
+
+            <!-- VALORES -->
+            <section class="acerca-valores" aria-labelledby="valores-titulo">
+                <h2 id="valores-titulo"><i class="fas fa-gem"></i> Nuestros valores</h2>
+                
+                <details>
+                    <summary><i class="fas fa-shield-alt"></i> Calidad</summary>
+                    <p>Seleccionamos solo productos de las mejores marcas y realizamos controles de calidad rigurosos.</p>
+                </details>
+                
+                <details>
+                    <summary><i class="fas fa-handshake"></i> Confianza</summary>
+                    <p>Construimos relaciones duraderas con nuestros clientes basadas en la transparencia y honestidad.</p>
+                </details>
+                
+                <details>
+                    <summary><i class="fas fa-lightbulb"></i> Innovación</summary>
+                    <p>Siempre a la vanguardia de la tecnología, ofreciendo lo último en el mercado.</p>
+                </details>
+                
+                <details>
+                    <summary><i class="fas fa-heart"></i> Pasión</summary>
+                    <p>Amamos la tecnología y eso se refleja en cada interacción con nuestros clientes.</p>
+                </details>
+            </section>
+
+            <!-- TESTIMONIOS -->
+            <section class="acerca-testimonio" aria-labelledby="testimonio-titulo">
+                <h2 id="testimonio-titulo"><i class="fas fa-quote-right"></i> Testimonios</h2>
+                
+                <blockquote>
+                    <p>
+                        "TechStore ha cambiado mi forma de comprar tecnología. 
+                        Su atención al cliente y calidad de productos son incomparables. 
+                        ¡100% recomendados!"
+                    </p>
+                    <footer>
+                        <cite>— Carlos Rodríguez, CEO de <abbr title="Innovación Digital">InnovaTech</abbr></cite>
+                    </footer>
+                </blockquote>
+
+                <blockquote>
+                    <p>
+                        "La mejor experiencia de compra en línea. 
+                        Los productos llegan en perfecto estado y el soporte es excelente."
+                    </p>
+                    <footer>
+                        <cite>— María Pérez, <abbr title="Diseñadora Gráfica">DG</abbr> y creadora de contenido</cite>
+                    </footer>
+                </blockquote>
+            </section>
+
+            <!-- EQUIPO -->
+            <section class="acerca-equipo" aria-labelledby="equipo-titulo">
+                <h2 id="equipo-titulo"><i class="fas fa-users"></i> Nuestro equipo</h2>
+                
+                <div class="equipo-grid">
+                    <article class="miembro-equipo">
+                        <img src="img/equipo-ceo.jpg" alt="Foto de Ana Martínez, CEO de TechStore" loading="lazy">
+                        <h3>Ana Martínez</h3>
+                        <p><strong>CEO & Fundadora</strong></p>
+                        <p>+10 años de experiencia en el sector tecnológico.</p>
+                    </article>
+
+                    <article class="miembro-equipo">
+                        <img src="img/equipo-cto.jpg" alt="Foto de Luis García, CTO de TechStore" loading="lazy">
+                        <h3>Luis García</h3>
+                        <p><strong>CTO</strong></p>
+                        <p>Experto en <abbr title="Inteligencia Artificial">IA</abbr> y desarrollo de software.</p>
+                    </article>
+
+                    <article class="miembro-equipo">
+                        <img src="img/equipo-marketing.jpg" alt="Foto de Sofía Reyes, Directora de Marketing" loading="lazy">
+                        <h3>Sofía Reyes</h3>
+                        <p><strong>Directora de Marketing</strong></p>
+                        <p>Especialista en marketing digital y <abbr title="Community Management">CM</abbr>.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- DETALLES ADICIONALES -->
+            <section class="acerca-detalles" aria-labelledby="detalles-titulo">
+                <h2 id="detalles-titulo"><i class="fas fa-info"></i> Más información</h2>
+                
+                <article>
+                    <h3><i class="fas fa-trophy"></i> Logros</h3>
+                    <ul>
+                        <li>🌟 Mejor Tienda Online 2025 - <abbr title="Premios Tecnológicos">Premio Tech</abbr></li>
+                        <li>🏆 Certificación de Excelencia en Servicio al Cliente</li>
+                        <li>📈 Crecimiento del 300% en el último año</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3><i class="fas fa-globe"></i> Presencia</h3>
+                    <ul>
+                        <li>📍 <abbr title="Santo Domingo">SD</abbr>, República Dominicana</li>
+                        <li>📍 Miami, Estados Unidos</li>
+                        <li>📍 <abbr title="Ciudad de México">CDMX</abbr>, México</li>
+                        <li>📍 Envíos a toda <abbr title="América Latina">Latam</abbr></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3><i class="fas fa-calendar-alt"></i> Eventos</h3>
+                    <p>
+                        Próximo evento: <strong>TechFest 2026</strong> - 
+                        <time datetime="2026-07-15">15 de julio de 2026</time>
+                    </p>
+                </article>
+            </section>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4><i class="fas fa-store"></i> TechStore</h4>
+                <p>Tu tienda de tecnología favorita.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i> Av. Tecnológica 123<br>
+                    <i class="fas fa-phone"></i> <a href="tel:+18091234567">+1 (809) 123-4567</a><br>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@techstore.com">info@techstore.com</a>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h4>Horario</h4>
+                <p><i class="fas fa-clock"></i> Lun-Vie: 9am - 9pm</p>
+                <p><i class="fas fa-clock"></i> Sáb: 10am - 6pm</p>
+                <p><i class="fas fa-clock"></i> Dom: Cerrado</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="far fa-copyright"></i> 2026 <strong>TechStore</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
